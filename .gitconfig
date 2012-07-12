@@ -1,0 +1,16 @@
+[user]
+	name = Jesper Haug Karsrud
+	email = EMAIL
+[color]
+	ui = true
+	status = true
+	interactive = true
+	diff = true
+	branch = true
+[core]
+	whitespace = trailing-space,space-before-tab
+	autocrlf = input
+[apply]
+	whitespace = fix
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
