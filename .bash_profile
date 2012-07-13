@@ -1,5 +1,5 @@
 # Load ~/.bash_prompt, ~/.exports, ~/.aliases, ~/.functions
-for file in ~/.{bash_prompt,exports,aliases,functions,extra}; do
+for file in ~/.{bash_prompt,exports,aliases,functions}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
