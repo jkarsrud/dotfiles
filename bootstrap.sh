@@ -8,3 +8,5 @@ cp ~/.dotfiles/.exports ~/.exports
 cp ~/.dotfiles/.aliases ~/.aliases
 cp ~/.dotfiles/.functions ~/.functions
 cp ~/.dotfiles/.bash_profile ~/.bash_profile
+
+echo "Don't forget to fix your .gitconfig!"
