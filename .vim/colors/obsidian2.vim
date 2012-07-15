@@ -20,45 +20,25 @@ let s:Colors = [
 
 " Syntax
 execute "hi Normal  guifg="     . s:Colors[1]  . " guibg=" . s:Colors[12]
-hi Normal ctermfg=253
 execute "hi Comment guifg="     . s:Colors[8]  . " guibg=" . s:Colors[12] . " gui=italic"
-hi Comment ctermfg=66
 execute "hi Conditional guifg=" . s:Colors[2]  . " guibg=" . s:Colors[12]
-hi Conditional ctermfg=113
 execute "hi Constant guifg="    . s:Colors[1]  . " guibg=" . s:Colors[12]
-hi Constant ctermfg=188
 execute "hi Error guifg="       . s:Colors[7]  . " guibg=" . s:Colors[12]
-hi Error ctermfg=173 ctermbg=none
 execute "hi Identifier guifg="  . s:Colors[9]  . " guibg=" . s:Colors[12]
-hi Identifier ctermfg=67
 execute "hi Ignore guifg="      . s:Colors[1]
-hi Ignore ctermfg=188
 execute "hi Operator guifg="    . s:Colors[6]  . " guibg=" . s:Colors[12]
-hi Operator ctermfg=187
 execute "hi PreProc guifg="     . s:Colors[0]  . " guibg=" . s:Colors[12]
-hi PreProc ctermfg=139
 execute "hi Repeat guifg="      . s:Colors[2]  . " guibg=" . s:Colors[12]
-hi Repeat ctermfg=113
 execute "hi Special guifg="     . s:Colors[2]  . " guibg=" . s:Colors[12]
-hi Special ctermfg=113
 execute "hi Statement guifg="   . s:Colors[2]  . " guibg=" . s:Colors[12]
-hi Statement ctermfg=113
 execute "hi Number guifg="      . s:Colors[3]  . " guibg=" . s:Colors[12]
-hi Number ctermfg=220
 execute "hi Boolean guifg="     . s:Colors[11] . " guibg=" . s:Colors[12]
-hi Boolean ctermfg=73
 execute "hi String guifg="      . s:Colors[5]  . " guibg=" . s:Colors[12]
-hi String ctermfg=208
 execute "hi Character guifg="   . s:Colors[5]  . " guibg=" . s:Colors[12]
-hi Character ctermfg=208
 execute "hi Title guifg="       . s:Colors[1]  . " guibg=" . s:Colors[12]
-hi Title ctermfg=253
 execute "hi Todo guifg="        . s:Colors[12] . " guibg=" . s:Colors[0]  . " gui=bold guisp=NONE"
-hi Todo ctermfg=16 ctermbg=139
 execute "hi Type guifg="        . s:Colors[9]  . " guibg=" . s:Colors[12]
-hi Type ctermfg=67
 execute "hi Underline guifg="   . s:Colors[10] . " guibg=" . s:Colors[12]
-hi Underline ctermfg=67
 
 " Groups
 execute "hi Cursor guifg="      . s:Colors[12] . " guibg=" . s:Colors[5]
@@ -92,3 +72,26 @@ hi VisualNOS gui=none guibg=black
 execute "hi WarningMsg  guifg=" . s:Colors[5]  . " guibg=" . s:Colors[12]  . " gui=none"
 execute "hi WildMenu  guifg="   . s:Colors[14]  . " guibg=" . s:Colors[5]  . " gui=none"
 
+if &t_Co > 255
+    hi Normal ctermfg=253
+    hi Comment ctermfg=66
+    hi Conditional ctermfg=113
+    hi Constant ctermfg=188
+    hi Error ctermfg=173 ctermbg=none
+    hi Identifier ctermfg=67
+    hi Ignore ctermfg=188
+    hi Function ctermfg=113
+    hi Operator ctermfg=187
+    hi PreProc ctermfg=139
+    hi Repeat ctermfg=113
+    hi Special ctermfg=113
+    hi Statement ctermfg=113
+    hi Number ctermfg=220
+    hi Boolean ctermfg=73
+    hi String ctermfg=208
+    hi Character ctermfg=208
+    hi Title ctermfg=253
+    hi Todo ctermfg=16 ctermbg=139
+    hi Type ctermfg=67
+    hi Underline ctermfg=67
+end
