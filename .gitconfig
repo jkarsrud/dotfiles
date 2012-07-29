@@ -1,5 +1,5 @@
 [user]
-	name = Jesper Haug Karsrud
+	name = USERNAME
 	email = EMAIL
 [color]
 	ui = true
@@ -10,7 +10,11 @@
 [core]
 	whitespace = trailing-space,space-before-tab
 	autocrlf = input
+	editor = vim
 [apply]
 	whitespace = fix
+[github]
+        user = USERNAME
+        token = TOKEN
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
