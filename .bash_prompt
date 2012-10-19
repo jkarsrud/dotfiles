@@ -64,7 +64,7 @@ function prompt_git() {
   if [[ "$flags" ]]; then
     output="$output$c1:$c5$flags"
   fi
-  echo " on $c1$c5$output$c1$c9 "
+  echo " on $c1$c3$output$c1$c9 "
 }
 
 # SVN info.
@@ -99,15 +99,14 @@ function prompt_command() {
   # misc: [cmd#:hist#]
   # PS1="$PS1$c1[$c0#\#$c1:$c0!\!$c1]$c9"
   # path: [user@host:path]
-  PS1="$PS1$c1$c0\u$c1 at $c0\h$c1 in $c3\w$c1$c9"
+  PS1="$PS1$c1$c0\w$c1$c9"
     # svn: [repo:lastchanged]
   PS1="$PS1$(prompt_svn)"
   # git: [branch:flags]
   PS1="$PS1$(prompt_git)"
   # exit code: 127
   PS1="$PS1$(prompt_exitcode "$exit_code")"
-  PS1="$PS1\n"
-  PS1="$PS1\$ "
+  PS1="$PS1$c1$c4\n➡ $c1"
 }
 
 PROMPT_COMMAND="prompt_command"
