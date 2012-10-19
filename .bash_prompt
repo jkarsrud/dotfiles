@@ -64,7 +64,7 @@ function prompt_git() {
   if [[ "$flags" ]]; then
     output="$output$c1:$c5$flags"
   fi
-  echo " on $c1$c3$output$c1$c9 "
+  echo " $c1$c3$output$c1$c9 "
 }
 
 # SVN info.
