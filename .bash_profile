@@ -1,5 +1,5 @@
 # Load ~/.bash_prompt, ~/.exports, ~/.aliases, ~/.functions
-for file in ~/.{bash_prompt,exports,aliases,functions}; do
+for file in ~/.{bash_prompt,exports,aliases,functions,git-completion}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
