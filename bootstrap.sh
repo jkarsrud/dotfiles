@@ -1,7 +1,7 @@
 #!/bin/bash
 cd ~
 
-ditto ~/.dotfiles/.vim ~/.vim
+cp ~/.dotfiles/.vim ~/.vim
 cp ~/.dotfiles/.vimrc ~/.vimrc
 cp ~/.dotfiles/.bash_prompt ~/.bash_prompt
 cp ~/.dotfiles/.exports ~/.exports
