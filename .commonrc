@@ -1,0 +1,8 @@
+# Load ~/.bash_prompt, ~/.exports, ~/.aliases, ~/.functions
+for file in ~/.{aliases,git-completion}; do
+  [[ -f "$file" ]] && source "$file"
+done
+
+# Locale
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
